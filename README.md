@@ -1,7 +1,7 @@
 # sogong-yug
 software engineering team project
 
-조 구성원
+#조 구성원
 
 201910960 박-운
 
