@@ -1,7 +1,7 @@
 <div align="center">
 
   # 💻 SOGONG-YUG 🖱️
-![제목을 입력해주세요_-002](https://user-images.githubusercontent.com/63347989/162216154-28d5df2e-5573-4540-a407-eae10762dd41.png)
+  ![제목을 입력해주세요_-001](https://user-images.githubusercontent.com/63347989/165647935-43e09e44-cbec-4215-85c5-d4fcdfb8e84b.png)
 
   ## 🌱 조 구성원 🌱
   |이름|학번|구분|
