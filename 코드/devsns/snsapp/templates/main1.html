@@ -1,0 +1,116 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>mainpage</title>
+
+  <style>
+    @FONT-FACE {
+        font-family: 'Neou';
+        src:url(../../static/Neou-Bold.ttf);
+    }
+  
+    body {
+      background-image: url(../../static/img/bg.png);
+      background-repeat: no-repeat;
+      background-position: 50% -0.5%;
+      background-size: 80%;      
+    }
+    
+
+
+    
+    .menu {
+      font-size: 13px;
+      font-family: "Neou";
+      position: absolute;
+      top:40%;
+      left: 50px;
+    }
+    
+    .add1 {
+      font-size: 20px;
+      font-family: "Neou";
+      position: absolute;
+      top:79%;
+      left: 78%;
+    }
+ 
+    .bar {
+      position: absolute;
+      top:13.5%;
+      left: 89.6%;
+    }
+    
+    .profile {
+      position: absolute;
+      top:8%;
+      left: 88%;
+    }
+    
+     .logo {
+      position: absolute;
+      top:9%;
+      left: 15px;
+    }
+    
+    .add1-item {
+      margin: 12px;
+    }
+    
+    .menu-item {
+      margin: 35px;
+    }
+    
+  </style>
+</head>
+
+<body>
+  
+  
+
+
+      
+
+  <div class="main">
+    
+  </div>
+
+  
+
+
+
+  <div class="menu">
+    <div class="menu-item">home</div>
+    <div class="menu-item">clothing</div>
+    <div class="menu-item">stats</div>   
+  </div>
+  
+  <div class="add1" text-align="right">
+    <div class="add1-item">ADD AND MANAGE YOUR</div>
+    <div class="add1-item">FAVORITE CLOTHES</div> 
+    
+  </div>
+  
+  <div class="bar">
+    <img src="https://blogfiles.pstatic.net/MjAyMjA2MDlfMjg3/MDAxNjU0NzY4MzA1Nzc4.kC8ZuzA9l3enpgnooem_V4U58MahcvuJja2R2qVUx0Ig.vhs2BN_zgJYGN3PjJqBCD7lAOhFI8mJMvvi10oeTjoAg.PNG.cassy0909/KakaoTalk_20220608_231231523_01_2.png" >
+  </div>
+  <div> 
+    <a class="profile" href="{% url 'login' %}">
+    <img src="https://blogfiles.pstatic.net/MjAyMjA2MDlfMTY3/MDAxNjU0NzY4MzI0ODc4.MdbyyWiZzuPxrjBb5CZHDNvQ8N-9vM5Fskyk37OjQm8g.1NFRoVyv2spQ_dSB7K1ZXi6LzKBaHpArSknmcqR0t7Ig.PNG.cassy0909/KakaoTalk_20220608_231231523_03_1.png" width="160px" height="30px">
+    </a>
+  
+  </div>
+    <div class="logo">
+    <img src="https://blogfiles.pstatic.net/MjAyMjA2MDlfMjAg/MDAxNjU0NzY4MzE3MDU0.KS7gT6iL6rtsL-Jy07BkCVASQKidI28BALbI3gGPxNIg.iEcvYtPknH-46qPdRNdR8I2KKaWa5lPCu1ijfJDTf2gg.PNG.cassy0909/KakaoTalk_20220608_231231523_02_2.png" width="180px" height="60px">
+    
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+
+</html>

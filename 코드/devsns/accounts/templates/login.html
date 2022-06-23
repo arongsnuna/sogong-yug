@@ -1,0 +1,36 @@
+{% load static %}
+{% load socialaccount %}
+
+<!DOCTYPE html>
+<html lang="ko">    
+    <head>
+        <meta charset="utf-8">
+        <title>login page</title>
+        <link rel ="stylesheet" href="{% static 'css/loginSignupPage.css'%}" type="text/css">
+        <script src="loginPage.js"></script>
+    </head>
+    <body>
+        <div class = "main">
+            <div class = "loginSignup">
+                <div class = "text">
+                    <p style="font-size: 3rem; margin-bottom: 1rem;">WELCOME BACK</p>
+                    ADD AND MANAGE YOUR
+                    <br>FAVORITE CLOTHES
+                </div>
+                <form class = "form" method="POST">
+                    {% csrf_token %}
+                    ID
+                    <br><input type="text" id="username" name="username">
+                    <br>
+                    <br>PASSWORD
+                    <br><input type="password" id="password" name="password">
+                    <br>
+                    <br><input type="submit" value="LOGIN" id="btn-login" style="cursor: pointer;">
+                </form>
+                <div class="signup">
+                    <br><a id="btn-signup" href="{% url 'signup' %}">SIGN UP</a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

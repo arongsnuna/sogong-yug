@@ -1,0 +1,163 @@
+<!--index main2-->
+{% load static %}
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>clothes list main page</title>
+        <link rel ="stylesheet" href="{% static 'css/clothesListMainPage.css'%}">
+    </head>
+    <body>
+        <header>
+            <div id="div-header-menu">
+                <img id="img-leftLine" src="{% static 'img/clothesListMain-img-leftLine.png' %}" alt="헤더왼쪽라인">
+                <ul>
+                    <li><a href="{% url 'home' %}">HOME</a></li>
+                    <li><a href="">CLOTHING</a></li>
+                    <li><a href="">STATS</a></li>
+                </ul>
+            </div>
+            <div id="div-header-logo">
+                <button id="btn-mainLogo">
+                    <img id="img-mainLogo" src="{% static 'img/clothesListMain-logo-main.png' %}" alt="메인로고">
+                </button>
+            </div>
+            <div id="div-header-profile">
+                <button id="btn-profile">
+                    <img id="img-profile" src="{% static 'img/clothesListMain-btn-profile.png' %}">
+                </button>
+            </div>
+        </header>
+
+        <div id="main">
+            <div id="div-side">
+                <div id="div-side-logo">
+                    <img id="img-logo-MYS" src="{% static 'img/clothesListMain-logo-MYS.png' %}" alt="MANAGE YOUR STYLE">
+                    <p style="font-size: 2rem;"><b>Clothing - Coats</b></p>
+                </div>
+    
+                <div id="div-side-type">
+                    <img id="img-type" src="{% static 'img/clothesListMain-img-type.png' %}" alt="type">
+                    <ul id="ul-typeList">
+                        <b>
+                            <li><a href="">Total</a></li>
+                            <li><a href="">Dresses</a></li>
+                            <li><a href="">Blouses & Shirts</a></li>
+                            <li><a href="">Coats</a></li>
+                            <li><a href="">Bombers</a></li>
+                            <li><a href="">T-shirts & Tops</a></li>
+                            <li><a href="">Sweatshirts</a></li>
+                            <li><a href="">Cardigans & Sweaters</a></li>
+                            <li><a href="">Jackets</a></li>
+                            <li><a href="">Trousers</a></li>
+                            <li><a href="">Jeans</a></li>
+                            <li><a href="">Shorts</a></li>
+                            <li><a href="">Skirts</a></li>
+                            <li><a href="">Nightwear</a></li>
+                            <li><a href="">Underwear</a></li>
+                        </b>
+                    </ul>
+                </div>
+                <div class="div-sides">
+                    <img id="img-sortResult" src="{% static 'img/clothesListMain-img-sortResult.png' %}" alt="sort result">
+                    <ul>
+                        <li><a href="">Date of Purchase/Up</a></li>
+                        <li><a href="">Date of Purchase/Down</a></li>
+                    </ul>
+                </div>
+                <div class="div-sides">
+                    <img id="img-sortResult" src="{% static 'img/clothesListMain-img-sortResult.png' %}" alt="sort result">
+                    <ul>
+                        <li><a href="">Match</a></li>
+                        <li><a href="">Not Match</a></li>
+                    </ul>
+                </div>
+                <div class="div-sides">
+                    <img id="img-sortResult" src="{% static 'img/clothesListMain-img-sortResult.png' %}" alt="sort result">
+                    <ul>
+                        <li><a href="">Match</a></li>
+                        <li><a href="">Not Match</a></li>
+                    </ul>
+                </div>
+            </div>
+    
+            <div id="div-main">
+                <div id="div-filter">
+                    <img id="img-filter" src="{% static 'img/clothesListMain-img-filter.png' %}" alt="filter">
+                    <div id="div-filter-size">
+                        <p style="margin-top: 0;"><b>Size</b></p>
+                        <label><input name="filter-size" type="radio" value="size-XS"> XS</label>
+                        <label><input name="filter-size" type="radio" value="size-S"> S</label>
+                        <label><input name="filter-size" type="radio" value="size-M"> M</label>
+                        <label><input name="filter-size" type="radio" value="size-L"> L</label>
+                        <label><input name="filter-size" type="radio" value="size-XL"> XL</label>
+                    </div>
+                    <div id="div-filter-season">
+                        <p style="margin-top: 0;"><b>Season</b></p>
+                        <label><input name="filter-season" type="radio" value="season-SS"> SS</label>
+                        <label><input name="filter-season" type="radio" value="season-FW"> FW</label>
+                    </div>
+                    <div id="div-filter-washType">
+                        <p style="margin-top: 0;"><b>Wash Type</b></p>
+                        <label><input name="filter-washType" type="radio" value="washType-doNotWash"> DO NOT WASH</label>
+                        <label><input name="filter-washType" type="radio" value="washType-permanentPress"> PERMANENT PRESS</label>
+                        <label><input name="filter-washType" type="radio" value="washType-gentleCycle"> GENTLE CYCLE</label>
+                        <label><input name="filter-washType" type="radio" value="washType-handWash"> HAND WASH</label>
+                    </div>
+                    <div id="div-filter-temperature">
+                        <p style="margin-top: 0;"><b>Temperature</b></p>
+                        <label><input name="filter-temperature" type="radio" value="temperature-30"> 30°C</label>
+                        <label><input name="filter-temperature" type="radio" value="temperature-40"> 40°C</label>
+                        <label><input name="filter-temperature" type="radio" value="temperature-50"> 50°C</label>
+                        <label><input name="filter-temperature" type="radio" value="temperature-60"> 60°C</label>
+                    </div>
+                    <div id="div-filter-dryCleaning">
+                        <p style="margin-top: 0;"><b>Dry Cleaning</b></p>
+                        <label><input name="filter-dryCleaning" type="radio" value="dryCleaning-no"> No</label>
+                        <label><input name="filter-dryCleaning" type="radio" value="dryCleaning-yes"> Yes</label>
+                    </div>
+                    <div id="div-filter-repair">
+                        <p style="margin-top: 0;"><b>Repair</b></p>
+                        <label><input name="filter-repair" type="radio" value="repair-no"> No</label>
+                        <label><input name="filter-repair" type="radio" value="repair-yes"> Yes</label>
+                    </div>
+                </div>
+                <div id="div-SAD">
+                    <button id="btn-search">
+                        <img src="{% static 'img/clothesListMain-btn-search.png' %}" alt="search">
+                    </button>
+                    <button id="btn-add" onclick=location.href="{% url 'postcreate' %}"> 
+                        <img src="{% static 'img/clothesListMain-btn-add.png' %}" alt="add">
+                    </button>
+                    <button id="btn-delete">
+                        <img src="{% static 'img/clothesListMain-btn-delete.png' %}" alt="delete">
+                    </button>
+                </div>
+                <div id="div-clothesList">
+                    <img id="img-LOC" src="{% static 'img/clothesListMain-img-LOC.png' %}" alt="LIST OF CLOTHES">
+                    <div id="div-clothesList-main">
+                        <ul class="clothes">
+                            {% for post in posts %}
+                            <li class="cloth"><a href="{% url 'detail' post.id %}">
+                                <div class="cloth-img"><img src = "{{ post.mainphoto.url }}" ></div>
+                                <div class="cloth-name">{{ post.title }}</div>
+                                <div class="cloth-type">{{ post.cloth_type }}</div>
+                                <div class="cloth-date">{{ post.date }}</div>
+                            </a></li>
+                            {% endfor %}
+                        </ul>
+
+
+
+                    </div>
+
+                </div>
+
+            </div>
+    
+        </div>
+    </body>
+    
+
+
+</html>

@@ -1,0 +1,43 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ko">    
+    <head>
+        <meta charset="utf-8">
+        <title>signup page</title>
+        <link rel ="stylesheet" href="{% static 'css/loginSignupPage.css'%}">
+    </head>
+    <body>
+        <div class = "main">
+            <div class = "loginSignup">
+                <div class = "text">
+                    <p style="font-size: 3rem; margin-bottom: 1rem;">SIGN UP</p>
+                    PLEASE ENTER YOUR DETAILS TO SIGN UP
+                </div>
+                <div class = "form">
+                    <form id="signup-form" class="user" method="POST">
+                        {% csrf_token %}
+                        NAME
+                        <br><input type="text" name="name" id="name">
+                        <br>
+                        <br>ID
+                        <br><input type="text" name="username" id="username" >
+                        <br>
+                        <br>PASSWORD
+                        <br><input type="password" name="password" id="password" >
+                        <br>
+                        <br>PASSWORD CHECK
+                        <br><input type="password" name="repeat" id="exampleRepeatPassword" >
+                        <br>
+                        <br>TOP SIZE
+                        <br><input type="text" name="top-size" />
+                        <br>
+                        <br>BOTTOM SIZE
+                        <br><input type="text" name="bottom-size" />
+                        <br>
+                        <br><input type="submit" name="btn-signup-fin" id="btn-signup-fin" value="SIGN UP" style="cursor: pointer;"/>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,255 @@
+@charset "utf-8";
+
+/* 바디 */
+body {
+    width: 100%;
+    height: 100%;
+}
+/* 헤더 */
+header {
+    width: 100%;
+    height: 200px;
+    font-family: Neou;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+header > div {
+    width: 300px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+}
+
+#div-header-menu li{
+    margin: 13px;
+}
+#img-leftLine {
+    height: 100px;
+    width: auto;
+    object-fit: contain;
+} 
+
+#div-header-logo {
+    justify-content: center;
+} 
+#img-mainLogo {
+    height: 100px;
+    width: auto;
+    object-fit: contain;
+}
+
+#img-profile {
+    height: auto;
+    width: 120px;
+    object-fit: contain;
+}
+
+
+/* 메인 창 */
+#main {
+    display: flex;
+    flex-direction: row;
+}
+
+/* 좌측 사이드 */
+#div-side {
+    width: 330px;
+    height: fit-content;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+#div-side-logo {
+    width: 330px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#img-logo-MYS {
+    width: 250px;
+    height: auto;
+    object-fit: contain;
+}
+
+#div-side-type {
+    width: 250px;
+    height: fit-content;
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+
+} 
+#ul-typeList {
+    margin-top: -10px;
+} 
+#ul-typeList li {
+    margin: 10px;
+}
+#img-type {
+    width: 15px;
+    height: auto;
+    object-fit: contain;
+}
+
+.div-sides {
+    margin-top: 50px;
+    width: 250px;
+    height: fit-content;
+    display: flex;
+}
+#img-sortResult {
+    width: 17px;
+    height: auto;
+    object-fit: contain;
+}
+.div-sides > ul {
+    margin-top: -10px;
+}
+.div-sides > ul > li {
+    margin: 10px;
+    font-size: 0.8rem;
+}
+
+
+
+#div-main{
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+    border-left: 1px solid lightgray;
+}
+
+
+/* 필터 */
+#div-filter {
+    width: fit-content;
+    height: 230px;
+    display: flex;
+    flex-direction: row;
+    margin-right: 50px;
+}
+#div-filter div {
+    width: 180px;
+    display: flex;
+    flex-direction: column;
+}
+
+#img-filter {
+    width: 17px;
+    height: 50px;
+    object-fit: contain;
+    margin-right: 30px;
+}
+
+#div-SAD {
+    width: fit-content;
+    height: 35px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+#div-SAD > button > img {
+    height: 20px;
+    width: auto;
+    object-fit: contain;
+    margin-left: 50px;
+}
+
+
+/* 옷리스트 창 */
+#div-clothesList {
+    display: flex;
+    flex-direction: row;
+}
+#img-LOC {
+    height: 120px;
+    width: auto;
+    object-fit: contain;
+    margin-top: 20px;
+}
+
+#div-clothesList-main {
+    display: flex;
+    flex-direction: row;
+}
+
+.cloth-img > img {
+    width: 330px;
+    height: auto;
+    object-fit: contain;
+}
+.cloth {
+    float: left;
+    box-sizing: border-box;
+    margin-right: 40px;
+    margin-bottom: 40px;
+}
+.cloth-name {
+    font-weight: bold;
+}
+
+
+#div-clothesList-pageNum {
+    margin-bottom: 200px;
+    margin-left: 430px;
+}
+
+.btn-page {
+    border: 1.5px solid black;
+    color: black;
+    width: 27px;
+    height: 27px;
+    margin: 3px;
+}
+.btn-page:hover{
+    color:white;
+    background-color:black
+}
+
+/* 기타 */
+button {
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background: none;
+}
+a {
+    text-decoration: none;
+    color: inherit; 
+}
+ul {
+    list-style-type: none;
+}
+
+input[type="radio"] {
+    appearance: none;
+    background: none;
+    border: 1px solid black;
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+    vertical-align: middle;
+}
+  
+input[type="radio"]:checked {
+    appearance: none;
+
+    background-color: black;
+    border: 1px solid black;
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+}
+
+label {
+    font-size: 0.8rem;
+}
+
+  
